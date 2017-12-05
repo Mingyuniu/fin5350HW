@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  4 17:38:18 2017
+
+@author: Muriel
+"""
+def nuggetnumber(target, small=6, medium=9, large=20):
+    for x in range(target// small+1):
+        for y in range(target// medium+1):
+            for z in range(target// large+1):
+                if (target==small * x+ medium * y+ large * z):
+                    return True
+    return False
+
+
+def main():
+    small=6
+    comput=0
+    largest=small-1
+    target=small
+    
+    while comput!=small:
+        if nuggetnumber(target):
+            comput!=1
+        else:
+            largest=target
+            comput=0
+        target+=1
+        
+    print("the highest number of Chicken nugget you can purchase is",largest)
+    
+main()
+
+    
