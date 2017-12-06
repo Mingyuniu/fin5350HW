@@ -14,8 +14,8 @@ def print_header():
     print("\tI will try to guess it in as few attempts as possible.\n")
 
 
-def print_footer(guess, tries):
-    print("I guessed it! The number was",guess_number)
+def print_footer(thenumber, tries):
+    print("I guessed it! The number was",thenumber)
     print("And it only took me", tries, "tries!\n")
     print("\n\nPress the enter key to exit.")    
     
@@ -25,13 +25,15 @@ def main():
     
     # set the initial values
     
-    guess_number=random.randint(1,100)
-    guess=50
+    thenumber=random.randint(1,100)
+    thenumber=int(input("Pick up a number"))
     Lowest = 1
     Highest = 100
     tries = 1
+    guess=random.randint(1,100)
     
     while  guess!=guess_number:
+        print("Now I start a guess",guess)
         if guess>guess_number:
             print("lower")
             Lowest=Lowest
@@ -44,6 +46,6 @@ def main():
             Highest=Highest
             guess=(Highest+guess)//2
         tries+=1
-    print_footer(guess, tries)
+    print_footer(thenumber, tries)
 
 main()
