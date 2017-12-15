@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Mingyu Niu(A02023845)  Nan Guo(A01755223)
+
 from AsianOption.data import MarketData
 from AsianOption.payoff import VanillaPayoff, call_payoff
 from AsianOption.engine import MonteCarloEngine, ArithmeticPricer, GeometricPricer
