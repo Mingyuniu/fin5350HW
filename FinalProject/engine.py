@@ -1,3 +1,8 @@
+
+# MingYu Niu (A02023845) Nan Guo(A01755223)
+
+
+
 import abc
 import enum
 import numpy as np
