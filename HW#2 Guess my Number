@@ -32,9 +32,9 @@ def main():
     tries = 1
     guess=random.randint(1,100)
     
-    while  guess!=guess_number:
+    while  guess!=thenumber:
         print("Now I start a guess",guess)
-        if guess>guess_number:
+        if guess>thenumber:
             print("lower")
             Lowest=Lowest
             Highest=guess
